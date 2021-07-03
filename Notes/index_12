@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title> Book Store</title>
+        <meta name="description" content=" This is the best Book Store">
+    </head>
+
+    <body>
+        <h1>Book Store</h1>
+        <p>This is my <b>Book Store</b>, Welcome </p>
+        <a href="https://www.google.com" title="Go to Google"> Google </a>
+        <a href="https://www.facebook.com" title="Go to Facebook"> Facebook </a>
+        <a href="index.html" title="Go to index" target="_blank"> Index </a>
+        <a href="mailto:test123@blabla.com" title="Contact me" > Contact me</a>
+        <a href="#mouatez" title="Go to mouatez Paragraph"> Mouatez Paragraph</a>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p id="mouatez"> Mouatez Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error impedit, optio dolorem ipsam, asperiores beatae voluptates possimus expedita accusamus id, aliquam nulla. Nihil ratione aliquid incidunt. Aut, neque esse.</p>
+
+    </body>
+</html>
