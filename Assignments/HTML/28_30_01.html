@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  </head>
+
+  <body>
+    <form action="" method="GET">
+      <input type="text" name="token" hidden value="b92f1fc2fce391ad7af633723afd3055">
+      <div>
+        <label for="mail">Email</label>
+        <input
+          type="email" 
+          name="email"
+          id="mail" 
+          value="o@o.com" 
+          readonly
+          >
+      </div>
+      <br>
+      <div>
+        <label for="user">Username</label>
+        <input 
+          type="text" 
+          name="username"
+          id="user" 
+          minlength="5"
+          maxlength="20"
+          autofocus
+          required
+        >
+      </div>
+      <br>
+      <input type="reset" name="" value="Empty">
+      <input type="submit" name="" value="Send">  
+    </form>
+  </body>
+</html>
