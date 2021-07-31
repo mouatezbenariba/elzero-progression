@@ -1,0 +1,7 @@
+div {
+  background-color: red; /* color name */
+  background-color: rgb(0 0 255 /50%); /*rgb: Red Green Blue Alpha Channel = Opacity */
+  background-color: #00FF00;
+  background-image: url("../img/pro-kid.jpg");
+  background-repeat: repeat;
+}
