@@ -1,11 +1,29 @@
-.shape1{
-
+.shape-1{
+  background-color:#D4D4D4; 
+  display: inline-block;
+  margin: 5px;
+  padding: 25px;
+  outline: 5px solid #000000;
+  border: 5px solid red;
+}
+.shape-2{
+  background-color:#D4D4D4; 
+  display: inline-block;
+  margin: 5px;
+  padding: 25px;
+  outline: 5px solid #000000;
+  border-color: blue green;
+  border-width: 5px;
+  border-style: solid;
 }
 
-.shape2{
-
-}
-
-.shape3{
-
+.shape-3{
+  background-color:#D4D4D4; 
+  display: inline-block;
+  margin: 5px;
+  padding: 25px;
+  outline: 5px solid #000000;
+  border-color: red green blue yellow;
+  border-width: 5px;
+  border-style: dashed;
 }
