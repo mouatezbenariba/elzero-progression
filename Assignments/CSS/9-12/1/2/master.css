@@ -1,0 +1,30 @@
+.shape-1{
+  background-color:#EEEEEE;
+  display: block;
+  margin: 20px;
+  padding: 7px;
+  width: 400px;
+  border-left: 4px solid #E91E63;
+  outline: 10px solid #EEEEEE;
+}
+
+.shape-2{
+  background-color:#EEEEEE;
+  display: block;
+  margin: 20px;
+  visibility: hidden;
+  padding: 7px;
+  width: 400px;
+  border-left: 4px solid #E91E63;
+  outline: 10px solid #EEEEEE;
+}
+
+.shape-3{
+  background-color:#EEEEEE;
+  display: block;
+  margin: 20px;
+  padding: 7px;
+  width: 400px;
+  border-left: 4px solid #009688;
+  outline: 10px solid #EEEEEE;
+}
