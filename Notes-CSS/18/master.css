@@ -1,0 +1,9 @@
+div{
+  background-color: #EEE;
+  color: red;
+  /* text-align: center; */
+  /* text-align: right; */
+  /* text-align: left;  default*/
+  /* direction: ltr; */
+  direction: rtl;
+}
