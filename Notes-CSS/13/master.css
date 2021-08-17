@@ -1,28 +1,15 @@
-.one{
-  border-bottom: 2px solid red;
+/* p{
   color: red;
-}
+} */
 
-.two{
-  border-bottom: 2px solid green;
-  color: green;
-}
+/* div p{
+  color: red;
+} */
 
-.three{
-  border-bottom: 2px solid blue;
-  color: blue;
-}
+/* .one{
+  color: red;
+} */
 
-.four{
-  border-bottom: 2px solid yellow;
-  color: yellow;
-}
-
-.one,
-.two,
-.three,
-.four{
-  padding: 10px;
-  background-color: #EEE;
-  margin: 10px 0;
+div .one{
+  color: red;
 }
