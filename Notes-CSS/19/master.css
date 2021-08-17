@@ -1,0 +1,13 @@
+a{
+  background-color: blueviolet;
+  /* text-decoration: overline; */
+  /* text-decoration: underline; */
+  /* text-decoration: line-through; */
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  /* text-transform: capitalize; */
+  text-transform: uppercase;
+
+}
