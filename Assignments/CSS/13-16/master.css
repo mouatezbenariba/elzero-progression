@@ -1,12 +1,13 @@
-.parent .child .title{
-  color: red;
+div{
+  background-color: #a52a2a;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  max-width: 400px;
+  width: fit-content;
 }
 
-.parent .title{
-  color: blue;
-}
-
-.parent p,
-.title{
-  color: green;
+.last{
+  height:80px;
+  overflow: hidden;
 }
