@@ -1,0 +1,12 @@
+a{
+  display: inline-block;
+
+  margin:50%;
+  padding: 5px 10px;
+  border-bottom: 5px solid #00514a;
+  
+  background-color: #009688;
+
+  text-align: center;
+  text-decoration: none;
+}
