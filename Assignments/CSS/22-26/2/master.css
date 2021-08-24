@@ -1,0 +1,17 @@
+.one,
+.two,
+.three{
+  text-align: center;
+}
+
+.one{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.two{
+  font-family: 'Cairo', sans-serif;
+}
+
+.three{
+  font-family: 'Jomhuria', cursive;
+}
