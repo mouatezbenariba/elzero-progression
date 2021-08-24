@@ -1,0 +1,16 @@
+h3{
+  font-family: 'Cairo', sans-serif;
+}
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h3,
+p{
+  padding: 20px;
+
+  background-color: #EEE;
+
+  text-align: center;
+}
