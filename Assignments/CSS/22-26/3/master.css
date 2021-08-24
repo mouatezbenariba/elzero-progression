@@ -1,0 +1,23 @@
+html{
+  font-size: 20px;
+}
+
+.one,
+.two,
+.three{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.one{
+  font-size: 2.5rem;
+  }
+
+
+.two{
+  font-size: 2rem;
+}
+
+.three{
+  font-size: 1.5rem;
+}
