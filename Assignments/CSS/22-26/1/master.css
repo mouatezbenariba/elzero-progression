@@ -1,0 +1,32 @@
+.one,
+.two{
+  margin: 20px;
+  padding: 20px;
+}
+
+.one{
+  border: 5px solid #ff5722;
+}
+
+.two{
+
+  border: 5px solid #009688;
+}
+
+.one-p,
+.two-p{
+  padding: inherit;
+  border: inherit;
+
+  text-align: center;
+
+  background-color: #dddddd;
+}
+
+.one-p{
+  background-color: #dddddd;
+}
+
+.two-p{
+  background-color: #dddddd;
+}
