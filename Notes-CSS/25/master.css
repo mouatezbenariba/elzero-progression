@@ -1,0 +1,8 @@
+.one{
+  font-variant: small-caps; 
+}
+
+.two{
+  text-transform: uppercase;
+  font-weight: bold;
+}
