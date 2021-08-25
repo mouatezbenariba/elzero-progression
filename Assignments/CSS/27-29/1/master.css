@@ -1,0 +1,40 @@
+.parent{
+  width: 800px;
+
+  background-color: #eeeeee;
+}
+
+.son-1,
+.son-2 div,
+.son-3 div,
+.son-4 div{
+  float: left;
+
+  margin-left: 15px;
+  margin-top: 15px;
+
+  background-color: #dddddd;
+
+  text-align: center;
+}
+
+.son-1{
+  width: calc((100% - 15px * 2)/1);
+}
+
+.son-2 div{
+  width: calc((100% - 15px * 4)/3);
+}
+
+.son-3 div{
+  width: calc((100% - 15px * 3)/2);
+}
+
+.son-4 div{
+  width: calc((100% - 15px * 5)/4);
+  margin-bottom: 15px;
+}
+
+.clear{
+  clear: both;
+}
