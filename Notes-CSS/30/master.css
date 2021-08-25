@@ -1,0 +1,35 @@
+body{
+  height: 5000px;
+}
+
+/* div{
+  width: 50px;
+  padding: 10px;
+  color: white; 
+}*/
+
+.one{
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.two{
+background-color: green;
+}
+
+.parent{
+  background-color: blue;
+  position: static;
+  width: 600px;
+  height: 400px;
+}
+
+.bar{
+  background-color: red;
+  color: white;
+  width: auto;
+  position: sticky;
+  top: 0px;
+  }
