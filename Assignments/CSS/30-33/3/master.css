@@ -1,0 +1,47 @@
+div{
+  top: 50%;
+}
+
+.parent{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+
+  width: 400px;
+  margin: 10px;
+  padding: 0px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  list-style: none;
+}
+
+.familly{
+  margin: 20px;
+  padding: 10px;
+
+  background-color: #EEE;
+}
+
+li{
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  list-style-position: outside;
+}
+
+.ind-2{
+  list-style-type: upper-roman;
+}
+
+.ind-3{
+  padding: 0;
+}
+
+.ind-3 li{
+  margin: 5px 0px;
+
+  background-color: white;
+
+  list-style-position: inside;
+}
