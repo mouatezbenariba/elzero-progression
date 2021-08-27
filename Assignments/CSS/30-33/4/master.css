@@ -1,0 +1,50 @@
+table{
+  position: absolute;
+
+  width: 700px;
+
+  background-color: #fefefe;
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+caption{
+  margin-bottom: 10px;
+
+  font-weight: bold;
+}
+
+.thead{
+  background-color: #404040;
+
+  color: white;
+}
+
+tbody{
+  background-color: #eeeeee;
+}
+
+img{
+  margin: 5px 0;
+}
+
+.view{
+  padding: 5px;
+
+  background-color: #03a9f4;
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.delete{
+  padding: 5px;
+
+  background-color: #e91e63;
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
