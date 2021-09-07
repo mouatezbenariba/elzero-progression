@@ -1,0 +1,20 @@
+div{
+  display: block;
+
+  width: 300px;
+  height: 60px;
+  margin: 20px auto;
+}
+
+.one,
+.three{
+  background-color: #eee;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 60px;
+}
+
+.two{
+  background-color: #f00;
+}
