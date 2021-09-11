@@ -1,0 +1,22 @@
+.one span{
+  background-color: #eee;
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.two::first-letter{
+  background-color: #eee;
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.three::first-line{
+  color: green;
+  font-weight: bold;
+}
+.four::selection{
+  color: red;
+  background-color: green;
+}
