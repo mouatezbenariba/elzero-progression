@@ -1,0 +1,32 @@
+div{
+  position: absolute;
+  display: inline-block;
+  
+  padding: 30px;
+  
+  background-color: #d4d4d4;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+div::before{
+  content: "1";
+  position: absolute;
+  left: 0;
+  
+  padding: 20px 10px;
+  
+  background-color: #f00;
+  margin-top: -20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+  transform: translate(-50%, 0%);
+}
