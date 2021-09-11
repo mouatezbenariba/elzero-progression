@@ -1,0 +1,26 @@
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+
+.one .pipeline{
+  position: absolute;
+}
