@@ -23,4 +23,9 @@
 
 .one .pipeline{
   position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #42dcdf;
 }
