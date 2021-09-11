@@ -35,10 +35,20 @@
   position: absolute;
   left: -10px;
   top: 50%;
-  transform: translate(-50%, -50%);
-  border-width: 5px;
+  transform: translate(-25%, -50%);
+  border-width: 10px;
   border-style: solid;
-  border-color: red green yellow #42dcdf;
+  border-color: transparent transparent transparent #42dcdf;
   margin: 0px;
   padding: 0px;
+}
+
+.one::after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #42dcdf;
 }
