@@ -1,35 +1,35 @@
-.one {
+.one{
   background-color: red;
   color: white;
 }
-.two {
+.two{
   background-color: #EEE;
   width: 100px;
   height: 100px;
 }
 
-a {
+a{
   color: green;
   text-decoration: none;
 }
 
-a:hover {
+a:hover{
   color: red;
 }
 
-.ch:checked + label {
+.ch:checked + label{
   color: red;
 }
 
-.ch:checked {
+.ch:checked{
   display: none;
 }
 
-a:visited {
+a:visited{
   color: red;
 }
 
-div:empty {
+div:empty{
   border: 10px red solid;
 }
 
