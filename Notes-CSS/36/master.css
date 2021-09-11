@@ -30,7 +30,7 @@
   background-color: #42dcdf;
 } */
 
-.one::before{
+.one::after{
   content: "";
   position: absolute;
   width: 5px;
