@@ -1,13 +1,11 @@
 div{
   display: block;
-
+  
   width: 300px;
   height: 60px;
-  margin: 20px auto;
-}
+  margin: 20px;
+  padding: 20px;
 
-.one,
-.three{
   background-color: #eee;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +13,6 @@ div{
   line-height: 60px;
 }
 
-.two{
-  background-color: #f00;
+div:empty{
+  background-color: red;
 }
