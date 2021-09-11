@@ -30,12 +30,15 @@
   background-color: #42dcdf;
 } */
 
-.one::after{
+.one::before{
   content: "";
   position: absolute;
-  width: 5px;
-  height: 100%;
-  right: -10px;
-  top: 0;
-  background-color: #42dcdf;
+  left: -10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: red green yellow #42dcdf;
+  margin: 0px;
+  padding: 0px;
 }
