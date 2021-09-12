@@ -1,0 +1,53 @@
+/* 
+Used Colors
+#efefef
+#e91e63
+#dddddd
+*/
+
+p{
+  display:block;
+  position: relative;
+  
+  width: 400px;
+  height: auto;
+  margin: 15px auto 15px auto;
+  padding: 20px;
+  border-left: 5px #e91e63 solid;
+
+  background-color: #efefef;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p::before{
+  content: "";
+
+  position: absolute;
+  left: -35px;
+  top: 50%;
+
+  /* you can use margin-top or transform: translate() method */
+  /* margin-top: -15px; */
+  transform: translate(0, -50%);
+  
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #e91e63 transparent transparent;
+} 
+
+p::after{
+  content: attr(data-person);
+  position: absolute;
+  left: -115px;
+  top: 50%;
+
+  width: 50px;
+  padding: 15px;
+
+  background-color: #dddddd;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  transform: translate(0, -50%);
+}
