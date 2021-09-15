@@ -1,0 +1,34 @@
+/* 
+  width: 100px;
+  height: 100px;
+
+  ---Colors---
+align center
+*/
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div{
+  display: inline-block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+  width: 100px;
+  height: 100px;
+
+  background-color: #efefef;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 7% 20%;
+  border-bottom-right-radius: 7% 20%;
+  border-bottom-left-radius: 50%;
+
+  -webkit-box-shadow: 0px -1px 10px 4px #898989 inset;
+          box-shadow: 0px -1px 10px 4px #898989 inset;
+}
