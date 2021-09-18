@@ -5,7 +5,9 @@
 */
 
 *{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 :root{
   --mainPadding: 20px;
@@ -21,7 +23,11 @@
 
   text-align: center;
 
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+
+       -o-transition-duration: 500ms;
+
+          transition-duration: 500ms;
 }
 
 .son{
@@ -33,8 +39,14 @@
 
   text-align: center;
 
-  transition-duration: 500ms;
-  transition-delay: 500ms;
+  -webkit-transition-duration: 500ms;
+
+       -o-transition-duration: 500ms;
+
+          transition-duration: 500ms;
+  -webkit-transition-delay: 500ms;
+       -o-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 
 .father:hover{
