@@ -1,0 +1,46 @@
+/* 
+  --Colors--
+  - light grey #f2f2f4
+  - grey       #dededc
+*/
+
+*{
+  box-sizing: border-box;
+}
+:root{
+  --mainPadding: 20px;
+  --mainMarginTop: 40px;
+}
+
+.father{
+  background-color: #f2f2f4;
+  width: 400px;
+  height: 200px;
+  margin-top: var(--mainMarginTop);
+  padding: var(--mainPadding);
+
+  text-align: center;
+
+  transition-duration: 500ms;
+}
+
+.son{
+  background-color: #dededc;
+  width: 300px;
+  height: 60px;
+  margin-top: 20px;
+  padding: var(--mainPadding);
+
+  text-align: center;
+
+  transition-duration: 500ms;
+  transition-delay: 500ms;
+}
+
+.father:hover{
+  margin-top: 0px;
+}
+
+.father:hover .son{
+  margin-top: var(--mainMarginTop);
+}
