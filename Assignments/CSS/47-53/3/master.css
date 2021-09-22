@@ -1,0 +1,78 @@
+:root{
+  --main-color: #607d8b;
+  --second-color: #eee;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+
+  background-color: var(--second-color);
+}
+
+.parent div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  width: calc(100%/3);
+  padding: 10px;
+  border: 7px solid #eee;
+
+  background-color: var(--main-color);
+}
+
+.one{
+  -ms-flex-item-align: self-end;
+      align-self: self-end;
+}
+
+.three{
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+  -ms-flex-item-align: self-start;
+      align-self: self-start;
+}
+
+.four{
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.five{
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.six{
+  -webkit-box-ordinal-group:8;
+      -ms-flex-order:7;
+          order:7;
+}
