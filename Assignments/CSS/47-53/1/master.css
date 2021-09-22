@@ -1,0 +1,40 @@
+/* 
+Colors :
+-- blue : #03a9f4
+-- orange : #ff5722
+-- grey : #eeeeee
+*/
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  width: 100px ;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+
+  background-color: #eeeeee;
+
+  -webkit-box-shadow: -5px 0 #03a9f4, 5px 0 #ff5722;
+
+          box-shadow: -5px 0 #03a9f4, 5px 0 #ff5722;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ff5722;
+}
