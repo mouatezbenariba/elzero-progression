@@ -19,15 +19,12 @@ Colors
   display: flex;
 
   -webkit-box-orient: vertical;
-
   -webkit-box-direction: normal;
 
-      -ms-flex-direction: column;
-
+  -ms-flex-direction: column;
           flex-direction: column;
 
   -webkit-box-pack: justify;
-
       -ms-flex-pack: justify;
 
           justify-content: space-between;
@@ -35,6 +32,7 @@ Colors
   width: 600px;
   height: 300px;
   margin: 20px auto;
+  outline: var(--second-color) solid 10px;
 
   background-color: var(--second-color);
 }
@@ -55,7 +53,6 @@ Colors
 
   height: 83px;
   padding: 10px;
-  border: 10px solid var(--second-color);
 
   background-color: var(--main-color);
 
