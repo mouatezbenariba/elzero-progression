@@ -1,0 +1,80 @@
+/* 
+Colors
+-- grey: #eeeeee
+-- blue: #009688
+*/
+:root{
+  --main-color: #009688;
+  --second-color: #eeeeee;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
+
+  -webkit-box-pack: justify;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
+  
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+
+  background-color: var(--second-color);
+}
+
+.parent div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  height: 83px;
+  padding: 10px;
+  border: 10px solid var(--second-color);
+
+  background-color: var(--main-color);
+
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+}
+
+.one{
+  width: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.two{
+  width: 50%;
+}
+
+.three{
+  width: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
