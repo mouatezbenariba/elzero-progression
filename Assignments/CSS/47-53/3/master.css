@@ -24,6 +24,7 @@
   width: 600px;
   height: 300px;
   margin: 20px auto;
+  outline: #eee solid 7px;
 
   background-color: var(--second-color);
 }
@@ -41,7 +42,6 @@
 
   width: calc(100%/3);
   padding: 10px;
-  border: 7px solid #eee;
 
   background-color: var(--main-color);
 }
