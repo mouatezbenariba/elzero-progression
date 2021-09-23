@@ -1,0 +1,82 @@
+/* 
+Colors
+-- grey: #eeeeee
+-- purple: #673ab7
+-- orange: #ff9800
+-- green: #8bc34a
+-- brown: #795548
+*/
+:root{
+  --color-one: #ff9800;
+  --color-two: #8bc34a;
+  --color-three: #795548;
+  --color-four: #673ab7;
+  --second-color: #eeeeee;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  outline: var(--second-color) solid 10px;
+
+  background-color: var(--second-color);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.parent div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  width: 17%;
+  height: 50%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.one{
+  background-color: var(--color-one);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.two{
+  background-color: var(--color-two);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.three{
+  background-color: var(--color-three);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.four{
+  background-color: var(--color-four);
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
