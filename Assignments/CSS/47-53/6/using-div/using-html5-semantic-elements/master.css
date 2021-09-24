@@ -1,0 +1,127 @@
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* main variables */
+:root{
+  --main-color: #dddddd;
+  --second-color: #eeeeee;
+}
+/* set the background of the page */
+body{
+  background-color: var(--second-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: justify;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
+
+  height: 10vh;
+}
+
+.logo,
+nav,
+section,
+aside,
+footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  background-color: var(--main-color);
+
+  border: 5px solid var(--second-color);
+}
+
+.logo {
+  width: 95px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  list-style: none;
+
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+section{
+  width: 70%;
+  padding: 5px;
+}
+
+aside{
+  padding: 5px;
+  width: 30%;
+}
+main-area{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  height: 80vh;
+}
+
+footer{
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  height: 10vh;
+}
+
+.copyright{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; 
+
+  margin-left: 10px;
+}
+
+.design{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  margin-right: 10px;
+}
