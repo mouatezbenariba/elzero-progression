@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+
+/* main variables */
+:root{
+  --main-color: #dddddd;
+  --second-color: #eeeeee;
+}
+/* set the background of the page */
+body{
+  background-color: var(--second-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  display: flex;
+
+  justify-content: space-between;
+
+  height: 10vh;
+}
+
+.logo,
+.links,
+.content,
+.sidebar,
+.footer{
+  display: flex;
+
+  background-color: var(--main-color);
+
+  border: 5px solid var(--second-color);
+}
+
+.logo {
+  width: 95px;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+
+  list-style: none;
+
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.links li {
+  margin-right: 10px;
+}
+
+.content{
+  width: 70%;
+  padding: 5px;
+}
+
+.sidebar{
+  padding: 5px;
+  width: 30%;
+}
+.main-area{
+  display: flex;
+
+  height: 80vh;
+}
+
+.footer{
+  justify-content: space-between;
+
+  height: 10vh;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  margin-left: 10px;
+}
+
+.design{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+}
