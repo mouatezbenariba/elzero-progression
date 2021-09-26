@@ -1,0 +1,105 @@
+/* Variables */
+
+:root{
+  --color-one:#f44336;
+  --color-two:#2196f3;
+  --color-three:#4caf50;
+  --color-four:#e91e63;
+  --color-five:#673ab7;
+  --color-back:#eee;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+
+  width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+
+  background-color: var(--color-back);
+
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 6px;
+}
+
+div::before{
+  content: "";
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+
+  width: 620px;
+  height: calc(100% + 20px);
+
+  background-image: -webkit-gradient(linear, 
+  left top, right top, 
+  color-stop(20%, var(--color-one)),
+  color-stop(20%, var(--color-two)),
+  color-stop(40%, var(--color-two)),
+  color-stop(40%, var(--color-three)),
+  color-stop(60%, var(--color-three)),
+  color-stop(60%, var(--color-four)),
+  color-stop(80%, var(--color-four)),
+  color-stop(80%, var(--color-five)));
+
+  background-image: -o-linear-gradient(left, 
+  var(--color-one) 20%,
+  var(--color-two) 20%,
+  var(--color-two) 40%,
+  var(--color-three) 40%,
+  var(--color-three) 60%,
+  var(--color-four) 60%,
+  var(--color-four) 80%,
+  var(--color-five) 80%);
+
+  background-image: linear-gradient(to right, 
+  var(--color-one) 20%,
+  var(--color-two) 20%,
+  var(--color-two) 40%,
+  var(--color-three) 40%,
+  var(--color-three) 60%,
+  var(--color-four) 60%,
+  var(--color-four) 80%,
+  var(--color-five) 80%);
+}
+
+div::after{
+  content: "E";
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  position: absolute;
+  left: 240.7px;
+
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-one);
+
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  letter-spacing: 6px;
+}
