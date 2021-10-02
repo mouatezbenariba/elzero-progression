@@ -1,0 +1,69 @@
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root{
+  --color-one:#ddd;
+  --color-two: #607d8b;
+  --color-three: #FFFFFF;
+}
+.grid {
+  display: grid;
+  grid-template: auto 1fr / repeat(3, 1fr);
+
+  background-color: var(--color-one);
+
+  margin: 20px auto;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+}
+
+.grid div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  background-color: var(--color-two);
+
+  padding: 10px;
+  margin: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--color-three);
+}
+
+.one::before{
+  content: "Element 1";
+}
+
+.two::before{
+  content: "Element 2";
+}
+
+.three::before{
+  content: "Element 3";
+}
+
+.four::before{
+  content: "Element 4";
+}
+
+.five::before{
+  content: "Element 5";
+}
+
+.six::before{
+  content: "Element 6";
+}
