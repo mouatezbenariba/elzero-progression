@@ -18,6 +18,8 @@
   padding: 20px;
   width: 800px;
   height: 400px;
+
+  counter-reset: my-counter;
 }
 
 .grid div{
@@ -44,26 +46,7 @@
   color: var(--color-three);
 }
 
-.one::before{
-  content: "Element 1";
-}
-
-.two::before{
-  content: "Element 2";
-}
-
-.three::before{
-  content: "Element 3";
-}
-
-.four::before{
-  content: "Element 4";
-}
-
-.five::before{
-  content: "Element 5";
-}
-
-.six::before{
-  content: "Element 6";
+.grid div::before{
+  counter-increment: my-counter;
+  content: "Element "counter(my-counter)"";
 }
