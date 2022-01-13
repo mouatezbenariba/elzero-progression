@@ -9,33 +9,33 @@
     <form action="test.py" method="POST">
       <input type="number" value="123456789" hidden>
       <div>
-        <label>Username</label>
+        <label for="user">Username</label>
         <br>
-        <input type="text" name="username" required placeholder="Type a Simple Username">
+        <input id="user" type="text" name="username" required placeholder="Type a Simple Username">
       </div>
       <hr>
       <div>
-        <label>Password</label>
+        <label for="pass">Password</label>
         <br>
-        <input type="password" name="password" placeholder="Type a Strong Password" >
+        <input id="pass" type="password" name="password" placeholder="Type a Strong Password" >
       </div>
       <hr>
       <div>
-        <label>Mobile</label>
+        <label for="mob">Mobile</label>
         <br>
-        +<input type="tel" name="mobile" pattern="[0-9]{3} [0-9]{3} [0-9]{5}" placeholder="+123 (234) 20100">
+        <input id="mob" type="tel" name="mobile" pattern="[0-9]{3} [0-9]{3} [0-9]{5}" placeholder="+123 (234) 20100">
       </div>
       <hr>
       <div>
-        <label>Email</label>
+        <label for="mail">Email</label>
         <br>
-        <input type="email" name="email" required placeholder="Type a valid email">
+        <input id="mail" type="email" name="email" required placeholder="Type a valid email">
       </div>
       <hr>
       <div>
-        <label>Subject</label>
+        <label for="sub">Subject</label>
         <br>
-        <input type="text" name="subject" placeholder="Be concise">
+        <input id="sub" type="text" name="subject" placeholder="Be concise">
       </div>
       <br>
       <div>
