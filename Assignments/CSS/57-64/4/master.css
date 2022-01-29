@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 
+colors
+#2196f3 blue
+#dddddd grey
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+}
+
+.grid div{
+  display: grid;
+  align-items: center;  text-align: center;
+  background-color: #2196f3;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.one {
+  grid-column: span 3;
+  order: 8;
+}
+
+.two {
+  grid-column: 1 / span 2;
+  order: 2;
+}
+
+.three {
+  order: 3;
+}
+
+.four {
+  order: 4;
+}
+
+.five {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 3;
+  order: 5;
+}
+
+.six {
+  order: 6;
+}
+
+.seven {
+  order: 7;
+}
+
+.eight {
+  grid-column: span 3;
+  order: 1;
+}
