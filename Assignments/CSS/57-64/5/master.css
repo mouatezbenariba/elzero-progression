@@ -1,0 +1,31 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 
+Colors 
+#e91e63
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+}
+
+.grid div {
+  background-color: #e91e63;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
