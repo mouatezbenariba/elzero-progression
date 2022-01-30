@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+            margin: 0;
+}
+
+:root {
+  --colorOne: #03a9f4;
+  --colorTwo: #e91e63;
+  --colorBack: #eeeeee;
+}
+
+
+div {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  background-color: var(--colorBack);
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  line-height: 200px;
+}
+
+div::before, div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 10px solid;
+  border-radius: inherit;
+  transition: transform 0.5s;
+}
+div::before {
+  border-color: var(--colorOne) white var(--colorOne) var(--colorOne);
+  transform: rotate(0turn) scale(1.115);
+}
+
+div::after {
+  border-color: var(--colorTwo) var(--colorTwo) var(--colorTwo) white;
+}
+
+div:hover::before {
+  transform:rotate(-1turn) scale(1.115);
+}
+
+div:hover::after {
+    transform:rotate(1turn);
+}
