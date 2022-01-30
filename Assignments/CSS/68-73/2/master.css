@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+            margin: 0;
+}
+
+:root {
+  --colorOne: #ffffff;
+  --colorBack: #009688;
+}
+
+h1 {
+  width: 150px;
+  margin: 50px auto;
+  padding: 20px 0;
+  text-align: center;
+  color: var(--colorOne);
+  position: relative;
+  background-color: var(--colorBack);
+  font-size: 38px;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  background-color: var(--colorBack);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform: skewX(20deg) translateX(-11%);
+      -ms-transform: skewX(20deg) translateX(-11%);
+          transform: skewX(20deg) translateX(-11%);
+}
+
+
+h1::after {
+  content: "";
+  position: absolute;
+  background-color: var(--colorBack);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  -webkit-transform: skewX(20deg) scaleX(0.13) translateX(-160%);
+      -ms-transform: skewX(20deg) scaleX(0.13) translateX(-160%);
+          transform: skewX(20deg) scaleX(0.13) translateX(-160%);
+}
