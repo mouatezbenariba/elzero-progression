@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+            margin: 0;
+}
+
+:root {
+  --colorOne: #ea2264;
+  --colorTwo: #2296f4;
+  --colorThree: #fca200;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+div {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--colorOne);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    margin-left: 45vw;
+    margin-top: 45vh;
+    -webkit-animation-name: three-circles-rotation;
+            animation-name: three-circles-rotation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+}
+
+div::before, div::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation-name: three-circles-rotation;
+          animation-name: three-circles-rotation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+div::before {
+  content: "";
+  border: 5px solid var(--colorTwo);
+  width: 65px;
+  height: 65px;
+  margin-top: -12.5px;
+  margin-left: -12.5px;
+  border-bottom-color: transparent;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+div::after {
+  content: "";
+  border: 5px solid var(--colorThree);
+  width: 80px;
+  height: 80px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border-bottom-color: transparent;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+div:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+div:hover::before, div:hover::after {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes three-circles-rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes three-circles-rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}

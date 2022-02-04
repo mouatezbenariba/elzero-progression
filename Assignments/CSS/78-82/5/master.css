@@ -1,0 +1,3 @@
+div:not(.no-need) p ~ div[title]:not(.no-need):last-child {
+  color: red;
+}

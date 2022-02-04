@@ -1,0 +1,4 @@
+/* direct only child */
+.parent > .baby:only-child {
+  color: red;
+}

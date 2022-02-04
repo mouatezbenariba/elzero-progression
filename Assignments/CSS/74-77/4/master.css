@@ -1,0 +1,281 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+            margin: 0;
+}
+
+:root {
+  --colorOne: #323234;
+  --colorTwo: #fea604;
+}
+
+@-webkit-keyframes animetwo {
+  0% {
+    left: 70%; top: 82%; opacity: 0%;
+  }
+  50% {
+    left: 70%; top: 82%; opacity: 0%;
+  }
+  52.5% {
+    left: 70%; top: 82%; opacity: 100%;
+  }
+  77.5% {
+    left: -1.2%; top: 82%; opacity: 100%;
+  }
+  97.5% {
+    left: -1.2%; top: 0%; opacity: 100%;
+  }
+  100% {
+    left: -1.2%; top: 0%; opacity: 0%;
+  }
+}
+
+@keyframes animetwo {
+  0% {
+    left: 70%; top: 82%; opacity: 0%;
+  }
+  50% {
+    left: 70%; top: 82%; opacity: 0%;
+  }
+  52.5% {
+    left: 70%; top: 82%; opacity: 100%;
+  }
+  77.5% {
+    left: -1.2%; top: 82%; opacity: 100%;
+  }
+  97.5% {
+    left: -1.2%; top: 0%; opacity: 100%;
+  }
+  100% {
+    left: -1.2%; top: 0%; opacity: 0%;
+  }
+}
+
+/* animations */
+
+@-webkit-keyframes animeone {
+  0% {
+    left: 70%; top: 0%;
+  }
+  5% {
+    left: -1%; top: 0%;
+  }
+  10% {
+    left: -1%; top: 41%;
+  }
+  15% {
+    left: 70%; top: 41%;
+  }
+  20% {
+    left: -1%; top: 41%;
+  }
+  25% {
+    left: -1%; top: 82%;
+  }
+  30% {
+    left: 70%; top: 82%;
+  }
+  35% {
+    left: -1%; top: 82%;
+  }
+  45% {
+    left: -1%; top: 0%;
+  }
+  50% {
+    left: 70%; top: 0%;
+  }
+  100% {
+    left: 70%; top: 0%;
+  }
+}
+
+@keyframes animeone {
+  0% {
+    left: 70%; top: 0%;
+  }
+  5% {
+    left: -1%; top: 0%;
+  }
+  10% {
+    left: -1%; top: 41%;
+  }
+  15% {
+    left: 70%; top: 41%;
+  }
+  20% {
+    left: -1%; top: 41%;
+  }
+  25% {
+    left: -1%; top: 82%;
+  }
+  30% {
+    left: 70%; top: 82%;
+  }
+  35% {
+    left: -1%; top: 82%;
+  }
+  45% {
+    left: -1%; top: 0%;
+  }
+  50% {
+    left: 70%; top: 0%;
+  }
+  100% {
+    left: 70%; top: 0%;
+  }
+}
+
+.container {
+  width: 560px;
+  height: 440px;
+  position: relative;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+/* Letter E and L common */
+.letterone, .lettertwo {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  grid-template-columns: 1fr repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+/* the letter E */
+/* parent */
+.letterone {
+  grid-template-areas: 
+  "one one one one one"
+  "two . . . ."
+  "three . . . ."
+  "four four four four four"
+  "five . . . ."
+  "six . . . ."
+  "seven seven seven seven seven"
+  ;
+}
+
+/* child */
+.one,.two,.three,.four,.five,.six,.seven {
+  background-color: var(--colorOne);
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+/* the letter L */
+/* parent */
+.lettertwo {
+  grid-template-areas: 
+  "oneb . . . ."
+  "twob . . . ."
+  "threeb . . . ."
+  "fourb . . . ."
+  "fiveb . . . ."
+  "sixb . . . ."
+  "sevenb sevenb sevenb sevenb sevenb"
+  ;
+}
+
+/* child */
+.oneb,.twob,.threeb,.fourb,.fiveb,.sixb,.sevenb {
+  background-color: var(--colorOne);
+}
+
+.oneb {
+  grid-area: oneb;
+}
+
+.twob {
+  grid-area: twob;
+}
+
+.threeb {
+  grid-area: threeb;
+}
+
+.fourb {
+  grid-area: fourb;
+}
+
+.fiveb {
+  grid-area: fiveb;
+}
+
+.sixb {
+  grid-area: sixb;
+}
+
+.sevenb {
+  grid-area: sevenb;
+}
+
+/* moving rectangle E */
+.span1 {
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  background-color: var(--colorTwo);
+  left: 70%;
+  -webkit-animation-name: animeone;
+          animation-name: animeone;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/* moving rectangle L */
+.span2 {
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  background-color: var(--colorTwo);
+  left: 70%;
+  top: 82%;
+  opacity: 0%;
+  -webkit-animation-name: animetwo;
+          animation-name: animetwo;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}

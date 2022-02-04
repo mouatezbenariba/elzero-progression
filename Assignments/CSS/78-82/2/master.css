@@ -1,0 +1,4 @@
+/* direct last child */
+.parent > .child:last-child {
+  color: red;
+}
