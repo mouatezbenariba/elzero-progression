@@ -16,6 +16,7 @@ This repository is for tracking my learning progress - the Elzero Academy (https
 
 
 ## HTML & CSS Practice (Finished)
+- [Challenges](https://elzero.org/category/courses/html-and-css-practice/)
 - [Template One](https://github.com/mouatezbenariba/template-html-css-01)
 - [Template Two](https://github.com/mouatezbenariba/template-html-css-02)
 - [Template Three](https://github.com/mouatezbenariba/template-html-css-03)
