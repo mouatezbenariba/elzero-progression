@@ -118,4 +118,4 @@ let g = true;
 // Do Not Use Variable Twice
 
 console.log( -d * +e); // 2000
-console.log(-d + +e * 2 + f + g * 3); // 173
+console.log((- --d * ++g) - --f); // 173 // 173
