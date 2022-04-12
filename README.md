@@ -23,7 +23,7 @@ This repository is for tracking my learning progress - the Elzero Academy (https
 
 ## Elzero Front-End Challenges (In progress)
 - [Challenges](https://elzero.org/category/challenges/front-end-challenges/)
-- [Solution]()
+- [Solution](https://github.com/mouatezbenariba/Elzero-Frontend-Challenges)
 
 ## Learn JavaScript in Arabic 2021 (In progress)
 - [Course](https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv)
