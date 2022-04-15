@@ -20,7 +20,7 @@ console.log(`${a.substr(0, 6)} ${a.substr(11, 6)}`); // Elzero School
 
 // Solution Must Be Dynamic Because String May Changes
 console.log(
-  `${a.charAt(0).toLowerCase()}${a.substring(1, a.length - 1)}${a
+  `${a.charAt(0).toLowerCase()}${a.substring(1, a.length - 1).toUpperCase()}${a
     .charAt(a.length - 1)
     .toLowerCase()}`
 ); // eLZERO WEB SCHOOl
