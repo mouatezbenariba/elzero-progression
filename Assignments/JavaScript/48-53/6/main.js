@@ -11,5 +11,5 @@ for (let i = start; i < swappedName.length; i++) {
     swappedName[i] = swappedName[i].toUpperCase();
   }
 }
-// console.log(`"${a.join('')}"`);
+
 console.log(swappedName);
