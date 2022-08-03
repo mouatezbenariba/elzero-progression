@@ -1,12 +1,12 @@
 let div = document.createElement('div');
 
 // start header
-let container = document.createElement('div');
+let container = div.cloneNode();
 container.className = 'container';
 
 let myHeader = document.createElement('header');
 
-let logo = document.createElement('div');
+let logo = div.cloneNode();
 logo.className = 'logo';
 logo.textContent = 'Elzero';
 
