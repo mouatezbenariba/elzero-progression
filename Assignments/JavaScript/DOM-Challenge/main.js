@@ -65,7 +65,7 @@ for (let i = 0; i < products.length; i++) {
 // start footer
 let footer = document.createElement('footer');
 container.appendChild(footer);
-footer.textContent = 'Copyright 2021';
+footer.textContent = 'Copyright 2022';
 
 footer.style.cssText =
   'background-color: #23a96e; padding: 0.5rem ; text-align: center; color: white;';
