@@ -1,5 +1,6 @@
 let div = document.createElement('div');
 document.body.style = "font-family: 'Dosis', sans-serif;";
+
 // start header
 let container = div.cloneNode();
 container.className = 'container';
