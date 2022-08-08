@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmouatez Billah Benariba" />
+    <meta name="description" content="" />
+    <!-- google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Font-awesome Library -->
+    <link rel="stylesheet" href="all.css" />
+    <!-- main style css -->
+    <link rel="stylesheet" href="master.css" />
+    <title>Learn JavaScript</title>
+    <style>
+      input:focus {
+        outline: none;
+      }
+
+      /* .container {
+      } */
+      .form {
+        display: flex;
+        width: 38rem;
+        margin: 1.2rem auto;
+        padding: 1.4rem;
+        background-color: #eee;
+        border-radius: 0.4rem;
+      }
+      input[type='text'] {
+        width: 100%;
+        padding: 0.6rem;
+        margin: 0 1rem;
+        border-radius: 0.3rem;
+        border-style: none;
+      }
+      input[type='submit'] {
+        min-width: fit-content;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        border-style: none;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .tasks {
+        width: 38rem;
+        margin: 1.2rem auto;
+        padding: 1.4rem;
+        border-radius: 0.4rem;
+        background-color: rgb(238, 238, 238);
+      }
+      .tasks div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem;
+        margin: 0 0 1rem 1rem;
+        border-radius: 0.3rem;
+        border-style: none;
+        background-color: white;
+        font-size: 1.3rem;
+      }
+      .tasks button {
+        background-color: orange;
+        border-radius: 0.3rem;
+        border-style: none;
+        padding: 0.2rem 0.4rem;
+        color: white;
+        font-weight: bold;
+        font-size: 0.83rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input type="text" class="input" />
+        <input type="submit" class="add" value="Add Task" />
+      </div>
+      <div class="tasks"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
