@@ -1,16 +1,28 @@
+// Declare Variables
 let input = document.querySelector("input[type='text']");
 let submit = document.querySelector("input[type='submit']");
 let tasks = document.querySelector('.tasks');
 let localArray = [];
 
+// Program
+tasks.addEventListener('click', deleteTask);
+submit.addEventListener('click', addTask);
+
+if (localStorage.tasks) {
+  localArray = JSON.parse(localStorage.tasks);
+  localArray.forEach(function (ele) {
+    let task = document.createElement('div');
+    task.innerHTML = `${ele.title}<button>Delete</button>`;
+    task.id = ele.id;
+    tasks.appendChild(task);
+  });
+}
+
+// Functions
+
 function addTask() {
   let task = document.createElement('div');
-  let taskText = document.createTextNode(input.value);
-  let deleteTask = document.createElement('button');
-  let deleteText = document.createTextNode('Delete');
-
-  deleteTask.appendChild(deleteText);
-  task.append(taskText, deleteTask);
+  task.innerHTML = `${input.value}<button>Delete</button>`;
   tasks.appendChild(task);
   addLocalStorage();
   localStorage.setItem('tasks', JSON.stringify(localArray));
@@ -25,15 +37,16 @@ function addLocalStorage() {
 }
 
 function deleteTask(evt) {
-  if (evt.target.parentElement.className === 'tasks') {
+  if (
+    evt.target.parentElement.className === 'tasks' ||
+    evt.target.className === 'tasks'
+  ) {
     evt.preventDefault();
   } else {
     evt.target.parentElement.remove();
     deleteLocalStorage(evt);
   }
 }
-
-tasks.addEventListener('click', deleteTask);
 
 function deleteLocalStorage(evt) {
   let newLocalArray = [];
@@ -44,22 +57,5 @@ function deleteLocalStorage(evt) {
   }
   localArray = newLocalArray;
   localStorage.setItem('tasks', JSON.stringify(localArray));
-}
-
-// the program
-submit.addEventListener('click', addTask);
-
-if (localStorage.tasks) {
-  localArray = JSON.parse(localStorage.tasks);
-  localArray.forEach(function (ele) {
-    let task = document.createElement('div');
-    let taskText = document.createTextNode(ele.title);
-    let deleteTask = document.createElement('button');
-    let deleteText = document.createTextNode('Delete');
-    task.id = ele.id;
-
-    deleteTask.appendChild(deleteText);
-    task.append(taskText, deleteTask);
-    tasks.appendChild(task);
-  });
+  location.reload();
 }
