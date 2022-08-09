@@ -26,6 +26,7 @@ function addTask() {
   tasks.appendChild(task);
   addLocalStorage();
   localStorage.setItem('tasks', JSON.stringify(localArray));
+  location.reload();
 }
 
 function addLocalStorage() {
@@ -57,5 +58,4 @@ function deleteLocalStorage(evt) {
   }
   localArray = newLocalArray;
   localStorage.setItem('tasks', JSON.stringify(localArray));
-  location.reload();
 }
