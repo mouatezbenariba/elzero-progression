@@ -7,24 +7,35 @@
     <meta name="author" content="Elmouatez Billah Benariba" />
     <meta name="description" content="" />
     <!-- google fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <!-- Font-awesome Library -->
     <link rel="stylesheet" href="all.css" />
     <!-- main style css -->
     <link rel="stylesheet" href="master.css" />
     <title>Learn JavaScript</title>
     <style>
-      input:focus {
-        outline: none;
+      :root {
+        font-family: 'Dosis', sans-serif;
       }
-
-      /* .container {
-      } */
+      h2 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      h3 {
+        text-align: center;
+        margin: 0;
+      }
+      h3 span:first-child {
+        color: orange;
+      }
+      h3 span:last-child {
+        color: #1a73e8;
+      }
       .form {
         display: flex;
         width: 38rem;
@@ -35,8 +46,8 @@
       }
       input[type='text'] {
         width: 100%;
-        padding: 0.6rem;
         margin: 0 1rem;
+        padding: 0.6rem;
         border-radius: 0.3rem;
         border-style: none;
       }
@@ -49,6 +60,9 @@
         color: white;
         font-weight: bold;
         cursor: pointer;
+      }
+      input:focus {
+        outline: none;
       }
       .tasks {
         width: 38rem;
@@ -81,6 +95,8 @@
   </head>
   <body>
     <div class="container">
+      <h2>BOM Challenge</h2>
+      <h3><span> Todo List</span> with <span>Local Storage</span></h3>
       <div class="form">
         <input type="text" class="input" />
         <input type="submit" class="add" value="Add Task" />
