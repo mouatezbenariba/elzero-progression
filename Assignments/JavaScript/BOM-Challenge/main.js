@@ -20,13 +20,18 @@ if (localStorage.tasks) {
 
 // Functions
 
-function addTask() {
-  let task = document.createElement('div');
-  task.innerHTML = `${input.value}<button>Delete</button>`;
-  tasks.appendChild(task);
-  addLocalStorage();
-  localStorage.setItem('tasks', JSON.stringify(localArray));
-  location.reload();
+function addTask(event) {
+  // prevent from blank and whitespace Inputs
+  if (typeof input.value === 'string' && Number(input.value) === 0) {
+    event.preventDefault();
+  } else {
+    let task = document.createElement('div');
+    task.innerHTML = `${input.value}<button>Delete</button>`;
+    tasks.appendChild(task);
+    addLocalStorage();
+    localStorage.setItem('tasks', JSON.stringify(localArray));
+    location.reload();
+  }
 }
 
 function addLocalStorage() {
@@ -37,22 +42,22 @@ function addLocalStorage() {
   localArray.push(obj);
 }
 
-function deleteTask(evt) {
+function deleteTask(event) {
   if (
-    evt.target.parentElement.className === 'tasks' ||
-    evt.target.className === 'tasks'
+    event.target.parentElement.className === 'tasks' ||
+    event.target.className === 'tasks'
   ) {
-    evt.preventDefault();
+    event.preventDefault();
   } else {
-    evt.target.parentElement.remove();
-    deleteLocalStorage(evt);
+    event.target.parentElement.remove();
+    deleteLocalStorage(event);
   }
 }
 
-function deleteLocalStorage(evt) {
+function deleteLocalStorage(event) {
   let newLocalArray = [];
   for (let i = 0; i < localArray.length; i++) {
-    if (evt.target.parentElement.id !== localArray[i].id.toString()) {
+    if (event.target.parentElement.id !== localArray[i].id.toString()) {
       newLocalArray.push(localArray[i]);
     }
   }
