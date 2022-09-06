@@ -6,7 +6,7 @@
 <p><b>Examples :</b></p>
 
 - The case of  `unknown` : The type check here is typeof callback === 'function' — checking whether the callback is a function. The type of callback narrows to function type.
-```
+```ts
 function invokeAnything(callback: unknown) {
   if (typeof callback === 'function') {
     callback();
@@ -16,7 +16,7 @@ function invokeAnything(callback: unknown) {
 invokeAnything(1);
 ```
 - The case of `any` : callback being any, TypeScript doesn't enforce any type checking for the statement callback().
-```
+```ts
 function invokeAnything(callback: any) {
   callback();
 }
