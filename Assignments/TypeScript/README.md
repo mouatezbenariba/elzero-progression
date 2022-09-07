@@ -42,8 +42,76 @@ enum Color {
 
 let c: Color = Color.Green;
 ```
+- <b>Unknown :</b> provide a type that tells the compiler and future readers that this variable could be anything, so we give it the unknown type.
+```ts
+let notSure: unknown = 4;
+notSure = "maybe a string instead";
+ 
+// OK, definitely a boolean
+notSure = false;
+```
+- <b>Any :</b> In some situations, not all type information is available or its declaration would take an inappropriate amount of effort.  In these cases, we might want to opt-out of type checking. To do so, we label these values with the `any` type.
+- <b>Void :</b> `void` is a little like the opposite of `any`: the absence of having any type at all (e.g. the return type of functions that do not return a value). We can assign `void` and `null` to `void`-typed variables ONLY if [strictNullChecks](https://www.typescriptlang.org/tsconfig/#strictNullChecks) is not specified.
+```ts
+function warnUser(): void {
+  console.log("This is my warning message");
+}
+```
+- <b>Null and Undefined :</b> `undefined` is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything. `null` is a variable that is defined but is missing a value.
+  - By default `null` and `undefined` are subtypes of all other types. That means we can assign `null` and `undefined` to something like `number`.
+```ts
+// "strictNullChecks": false
+let n: number;
+let u: undefined;
+n = u;
 
+console.log(typeof n);
+// result : undefind
+```
+  - However, when using the [strictNullChecks](https://www.typescriptlang.org/docs/handbook/basic-types.html) flag, `null` and `undefined` are only assignable to `unknown`, any and their respective types.
+```ts
+// "strictNullChecks": true
+let n: number;
+let u: undefined;
+n = u; // Type 'undefind' is not assignable to type 'number'.
+```
+```ts
+// "strictNullChecks": true
+let a: unknown; // or 'any' type
+let b: undefined;
+a = b;
 
+console.log(typeof a);
+// result : undefind
+```
+ - the one exception being that `undefined` is also assignable to `void`.
+```ts
+let a: void;
+let b: undefined;
+a = b;
+```
+- <b>Never :</b> the `never` type represents the type of values that never occur.
+```ts
+// Function returning never must not have a reachable end point
+function error(message: string): never {
+  throw new Error(message);
+}
+ 
+// Inferred return type is never
+function fail() {
+  return error("Something failed");
+}
+ 
+// Function returning never must not have a reachable end point
+function infiniteLoop(): never {
+  while (true) {}
+}
+```
+source :
+- [Basic Types - TypeScript Official Documentation - old](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [Everyday Types - TypeScript Official Documentation - new](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+- [Unknown vs Any in Typescript](https://dmitripavlutin.com/typescript-unknown-vs-any/)
+- [JavaScript: Check if Variable is undefined or null](https://stackabuse.com/javascript-check-if-variable-is-a-undefined-or-null/)
 ### 2. Typescript `unknown` vs `any`
 - You can assign anything to `unknown` type but you have to do a type check or type assertion to operate on unknown
 - You can assign anything to `any` type and you can perform any operation on any. After all, remember that all the convenience of any comes at the cost of losing type safety.
@@ -67,6 +135,7 @@ function invokeAnything(callback: any) {
  
 invokeAnything(1);
 ```
+- Unlike unknown, variables of type any allow you to access arbitrary properties, even ones that don’t exist.
 source :
 - [Basic Types - TypeScript Official Documentation](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Unknown vs Any in Typescript](https://dmitripavlutin.com/typescript-unknown-vs-any/)
