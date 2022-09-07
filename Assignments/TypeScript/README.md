@@ -112,6 +112,7 @@ source :
 - [Everyday Types - TypeScript Official Documentation - new](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
 - [Unknown vs Any in Typescript](https://dmitripavlutin.com/typescript-unknown-vs-any/)
 - [JavaScript: Check if Variable is undefined or null](https://stackabuse.com/javascript-check-if-variable-is-a-undefined-or-null/)
+
 ### 2. Typescript `unknown` vs `any`
 - You can assign anything to `unknown` type but you have to do a type check or type assertion to operate on unknown
 - You can assign anything to `any` type and you can perform any operation on any. After all, remember that all the convenience of any comes at the cost of losing type safety.
@@ -139,3 +140,9 @@ invokeAnything(1);
 source :
 - [Basic Types - TypeScript Official Documentation](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Unknown vs Any in Typescript](https://dmitripavlutin.com/typescript-unknown-vs-any/)
+
+### 3. Difference between `never`, `void` and `any`
+- `never` : for typescript function that will never return something, can be always running or throw some error (doesn’t have time to return).
+- `void` : for Typescript function that will return nothing.
+- `any` : for Typescript function where you are not sure of it returns.
+source : [Difference between void and never in Typescript](https://thehotcode.com/typescript-difference-void-never/)
