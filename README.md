@@ -31,7 +31,7 @@ This repository is for tracking my learning progress - the Elzero Academy (https
 - [Solution (Github)](https://github.com/mouatezbenariba/elzero-progression/tree/main/Assignments/JavaScript)
 - [Solution (Codepen)](https://codepen.io/collection/ZMLRRx)
 
-## Learn Typescript In Arabic 2022 (In progress)
+## Learn Typescript In Arabic 2022 (Completed)
 - [Course](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ)
 - [Assignments](https://elzero.org/category/assignments/typescript-assignments/)
 - [Solution (Github)](https://github.com/mouatezbenariba/elzero-progression/tree/main/Assignments/TypeScript)
