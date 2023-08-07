@@ -22,7 +22,7 @@ This repository is for tracking my learning progress - the Elzero Academy (https
 - [Template Three](https://github.com/mouatezbenariba/template-html-css-03)
 - [Template Four](https://github.com/mouatezbenariba/template-html-css-04)
 
-## Elzero Front-End Challenges (In progress)
+## Elzero Front-End Challenges (Completed)
 - [Challenges](https://elzero.org/category/challenges/front-end-challenges/)
 - [Solution](https://github.com/mouatezbenariba/Elzero-Frontend-Challenges)
 
