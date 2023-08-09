@@ -1,0 +1,15 @@
+.widget {
+  background-color: white;
+  padding: 20px;
+}
+
+.main-border {
+  border: 1px solid #ccc;
+}
+
+.my-class {
+  font-weight: bold;
+  margin: 20px auto;
+  @extend .widget;
+  @extend .main-border;
+}
