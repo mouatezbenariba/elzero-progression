@@ -1,0 +1,8 @@
+@use './helpers/functions';
+@use './helpers/vars';
+@use './layout/header';
+@use './layout/footer';
+
+body {
+  color: vars.$text-color;
+}
