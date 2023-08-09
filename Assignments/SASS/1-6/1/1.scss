@@ -1,0 +1,17 @@
+.content {
+  > .box {
+    padding: 15px;
+    > .title {
+      font-size: 18px;
+    }
+  }
+  .cat {
+    padding: 15px;
+  }
+  &.premium:before {
+    content: 'Premium Box,';
+  }
+  &.premium:hover {
+    content: 'Premium Box,';
+  }
+}
