@@ -1,0 +1,14 @@
+.box h2,
+.box p {
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  .box h2,
+  .box p {
+    font-size: 16px;
+  }
+  .box h2 span,
+  .box p span {
+    font-weight: bold;
+  }
+}
