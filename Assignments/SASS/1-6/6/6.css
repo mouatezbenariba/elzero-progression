@@ -1,0 +1,13 @@
+.my-class {
+  background-color: white;
+  padding: 20px;
+}
+
+.my-class {
+  border: 1px solid #ccc;
+}
+
+.my-class {
+  font-weight: bold;
+  margin: 20px auto;
+}
