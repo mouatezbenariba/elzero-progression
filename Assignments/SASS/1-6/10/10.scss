@@ -1,0 +1,13 @@
+$layer1: 'box';
+$layer2: 'holder';
+$layer3: 'content';
+
+.#{$layer1} {
+  font-size: 20px;
+}
+.#{$layer1}-#{$layer2} {
+  width: 1000px;
+}
+.#{$layer1}-#{$layer2}-#{$layer3} {
+  margin: auto;
+}
