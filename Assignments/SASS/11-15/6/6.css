@@ -1,0 +1,15 @@
+textarea.placeholder {
+  color: #777;
+}
+textarea:-moz-placeholder {
+  color: #777;
+}
+textarea::-moz-placeholder {
+  color: #777;
+}
+textarea:-ms-input-placeholder {
+  color: #777;
+}
+textarea::-webkit-input-placeholder {
+  color: #777;
+}
