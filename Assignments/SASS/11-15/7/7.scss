@@ -1,0 +1,14 @@
+@mixin flex-center($width: 400px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: #{$width};
+}
+
+.box-one {
+  @include flex-center(400px);
+}
+
+.box-two {
+  @include flex-center;
+}
