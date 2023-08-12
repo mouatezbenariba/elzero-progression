@@ -1,0 +1,10 @@
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-color: red;
+}
