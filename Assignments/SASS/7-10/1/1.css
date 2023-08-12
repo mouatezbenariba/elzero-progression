@@ -1,0 +1,11 @@
+.school {
+  padding: 20px;
+  direction: rtl;
+  margin-right: 20px;
+}
+.school .school-box {
+  padding: 20px;
+}
+.school:hover .school-box {
+  background-color: #eee;
+}
