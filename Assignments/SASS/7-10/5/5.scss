@@ -1,0 +1,10 @@
+$number: 10;
+
+.box {
+  @if ($number > 8) {
+    background-color: #eee;
+    @if ($number > 9) {
+      text-align: center;
+    }
+  }
+}
