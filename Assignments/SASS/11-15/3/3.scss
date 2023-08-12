@@ -1,0 +1,10 @@
+$names: 'books' 20px red 18, 'games' 30px green 18, 'dvds' 20px blue;
+
+@each $type, $gap, $color, $size in $names {
+  .#{$type} {
+    padding: #{$gap};
+    font-size: if($size, #{$size}px, 16px);
+    border-bottom: 2px solid #{$color};
+    color: #ddd;
+  }
+}
