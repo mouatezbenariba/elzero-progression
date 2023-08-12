@@ -1,0 +1,18 @@
+// $number: 10;
+// $number: 8;
+$number: 5;
+
+@if ($number > 8) {
+  .class {
+    color: blue;
+  }
+}
+@elseif ($number > 5 ) {
+  .class {
+    color: green;
+  }
+} @else {
+  .class {
+    color: red;
+  }
+}
