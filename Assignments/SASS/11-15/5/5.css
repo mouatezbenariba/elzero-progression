@@ -1,0 +1,35 @@
+.circle-100 {
+  width: 100;
+  height: 100;
+  border-radius: 50 px;
+}
+
+.circle-200 {
+  width: 200;
+  height: 200;
+  border-radius: 100 px;
+}
+
+.circle-300 {
+  width: 300;
+  height: 300;
+  border-radius: 150 px;
+}
+
+.circle-400 {
+  width: 400;
+  height: 400;
+  border-radius: 200 px;
+}
+
+.circle-500 {
+  width: 500;
+  height: 500;
+  border-radius: 250 px;
+}
+
+.circle-600 {
+  width: 600;
+  height: 600;
+  border-radius: 300 px;
+}
