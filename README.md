@@ -36,4 +36,12 @@ This repository is for tracking my learning progress - the Elzero Academy (https
 - [Course](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ)
 - [Assignments](https://elzero.org/category/assignments/typescript-assignments/)
 - [Solution (Github)](https://github.com/mouatezbenariba/elzero-progression/tree/main/Assignments/TypeScript)
-- [Solution (Codepen)]()
+- [Solution (Codepen)](https://codepen.io/collection/jbLYyw)
+
+## Learn SASS In Arabic 2021 (Completed)
+- [Course](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzlpyFHOaB3b-eubmF0TAV2)
+- [Assignments](https://elzero.org/category/assignments/sass-assignments/)
+- [Solution (Github)](https://github.com/mouatezbenariba/elzero-progression/tree/main/Assignments/SASS)
+- [Solution (Codepen)](https://codepen.io/collection/kNRBRR)
+
+  
