@@ -133,6 +133,14 @@ html
           li NodeJS
           li JavaScript
           li HTML
+        //- for loop
+        - for(var i = 0; i < 5; i++)
+          div Hello
+        //- while loop
+        - var x = 0
+        ul
+          while x < 20
+            li= x++
       //- unbuffered code
       //- - var className ='font';
       div(class="parent " + className)
@@ -163,4 +171,5 @@ html
         'background-color': 'blue',
         'color': 'white'}) Send
       button(style="background-color: red; color: white") Reset
+
     include includes/scripts.pug
