@@ -113,6 +113,7 @@
 
 //- ---------------------------
 
+include includes/myvars
 html
   head
     meta(charset="UTF-8")
@@ -132,11 +133,12 @@ html
           li NodeJS
           li JavaScript
           li HTML
-      ul
-        li PHP
-        li NodeJS
-        li JavaScript
-        li HTML
+      //- unbuffered code
+      //- - var className ='font';
+      div(class="parent " + className)
+        div(class="child")
+      //- buffured code
+      div= "This <strong>Tag</strong> is not visible."
       p.main-paragraph My name is <b>Ahmed</b>
       p#main-paragraph My name is <b>Ahmed</b>
       |  and my family 
