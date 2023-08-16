@@ -111,11 +111,16 @@
 //-       .
 //-         My nickname is Hamada
 
-
-//- Attributes part 2
+//- ---------------------------
 
 html
   head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content="random description")
+    // Styles
+    include includes/styles.pug
     title My resume
   body
     .ossama
@@ -156,3 +161,4 @@ html
         'background-color': 'blue',
         'color': 'white'}) Send
       button(style="background-color: red; color: white") Reset
+    include includes/scripts.pug
